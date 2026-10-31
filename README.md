@@ -64,21 +64,75 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Immowelt is a leading German online real‑estate marketplace that connects property seekers with landlords, real‑estate agents and developers. The platform offers listings for apartments, houses, and commercial spaces across Germany and Austria, providing tools for searching, filtering, and contacting sellers. Immowelt also supplies market data, price trends, and a range of services for both private users and professional partners, positioning itself as a central hub in the European property market.
+Immowelt is a German real estate marketplace (immowelt.de). Its Developer Portal (www.developers.immowelt.de, hosted on Kong Konnect) documents partner APIs for listings import and management, listings export and seeker leads, authenticated with OAuth 2.0 client credentials (machine-to-machine) against auth.apim.immowelt.de, with production and sandbox base URLs under apim.immowelt.de. The portal states the APIs moved from aviv-group.com endpoints to dedicated Immowelt domains, with the old endpoints kept during a transition period. Partner support is by email at service@immowelt.de.
 
-**Areas:** Real Estate · Marketplace · Germany · Austria · Property Listings
+**Areas:** Company · Real Estate · Property Listings · Marketplace · Leads · Germany · OAuth 2.0
 
 ## Immowelt on APIs.io
 
 Everything profiled for Immowelt is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/immowelt/](https://apis.io/providers/immowelt/)** — or go straight to one of the APIs or properties below.
 
-### APIs (1)
+### APIs (8)
 
-- [Immowelt API](https://apis.io/apis/immowelt/immowelt-api/) — Immowelt provides RESTful APIs for real‑estate listings, import/export of listings, and seeker leads, as described in the developer portal.
+- [Immowelt Get Export Status API](https://apis.io/apis/immowelt/immowelt-getexportstatus-api/) — retrieve the status of the export process.
+- [Immowelt Health API](https://apis.io/apis/immowelt/immowelt-health-api/) — Health of the service.
+- [Immowelt Leads API](https://apis.io/apis/immowelt/immowelt-leads-api/) — The Leads API from Immowelt — 2 operation(s) for leads.
+- [Immowelt Listing API](https://apis.io/apis/immowelt/immowelt-listing-api/) — CRUD operations about listings.
+- [Immowelt Media API](https://apis.io/apis/immowelt/immowelt-media-api/) — Request presigned URLs to upload media files.
+- [Immowelt Project API](https://apis.io/apis/immowelt/immowelt-project-api/) — CRUD operations about projects.
+- [Immowelt Request Listings Export API](https://apis.io/apis/immowelt/immowelt-requestlistingsexport-api/) — create request the export process.
+- [Immowelt Webhook API](https://apis.io/apis/immowelt/immowelt-webhook-api/) — The Webhook API from Immowelt — 3 operation(s) for webhook.
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Immowelt Agentic Access](https://apis.io/agentic-access/immowelt/immowelt-agentic-access/)
+
+#### JSON Schema (15)
+
+The data models the API reads and writes.
+
+- [apiRequest](https://apis.io/schemas/immowelt/immowelt-api-request/)
+- [createLeadRequest](https://apis.io/schemas/immowelt/immowelt-create-lead-request/)
+- [GetExportStatusResponse](https://apis.io/schemas/immowelt/immowelt-get-export-status-response/)
+- [listingResponse](https://apis.io/schemas/immowelt/immowelt-listing-response/)
+- [mediaPresignedUrlRequest](https://apis.io/schemas/immowelt/immowelt-media-presigned-url-request/)
+- [mediaPresignedUrlResponse](https://apis.io/schemas/immowelt/immowelt-media-presigned-url-response/)
+- [passHealthResponse](https://apis.io/schemas/immowelt/immowelt-pass-health-response/)
+- [projectResponse](https://apis.io/schemas/immowelt/immowelt-project-response/)
+- [RequestListingsExportRequest](https://apis.io/schemas/immowelt/immowelt-request-listings-export-request/)
+- [RequestListingsExportResponse](https://apis.io/schemas/immowelt/immowelt-request-listings-export-response/)
+- [webhookAuditResponse](https://apis.io/schemas/immowelt/immowelt-webhook-audit-response/)
+- [webhookSubscriptionAddRequest](https://apis.io/schemas/immowelt/immowelt-webhook-subscription-add-request/)
+- [webhookSubscriptionListResponse](https://apis.io/schemas/immowelt/immowelt-webhook-subscription-list-response/)
+- [webhookSubscriptionResponse](https://apis.io/schemas/immowelt/immowelt-webhook-subscription-response/)
+- [webhookSubscriptionUpdateRequest](https://apis.io/schemas/immowelt/immowelt-webhook-subscription-update-request/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Immowelt Context](https://apis.io/jsonld/immowelt/immowelt-context/)
+
+#### Overlays (4)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Immowelt Export Listings Overlay](https://apis.io/overlays/immowelt/immowelt-export-listings-overlay/)
+- [Immowelt Import Listings Overlay](https://apis.io/overlays/immowelt/immowelt-import-listings-overlay/)
+- [Immowelt Seeker Leads Ingest Overlay](https://apis.io/overlays/immowelt/immowelt-seeker-leads-ingest-overlay/)
+- [Immowelt Seeker Leads Overlay](https://apis.io/overlays/immowelt/immowelt-seeker-leads-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Immowelt API Rules](https://apis.io/rules/immowelt/immowelt-rules/)
 
 #### Security (3)
 
@@ -88,41 +142,63 @@ Authentication, trust centre, and vulnerability disclosure.
 - [Immowelt Domain Security](https://apis.io/security/immowelt/immowelt-domain-security/)
 - [Immowelt Vulnerability Disclosure](https://apis.io/security/immowelt/immowelt-vulnerability-disclosure/)
 
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Immowelt Scopes](https://apis.io/scopes/immowelt/immowelt-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Immowelt Plans Pricing](https://apis.io/plans/immowelt/immowelt-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Immowelt Rate Limits](https://apis.io/rate-limits/immowelt/immowelt-rate-limits/)
+
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://immowelt.de/)
-- [Documentation](https://developers.immowelt.de/)
+- [Documentation](https://www.developers.immowelt.de/guides)
+- [Getting started](https://www.developers.immowelt.de/guides/how-to-onboard-on-immowelt-apis)
+- [API reference](https://www.developers.immowelt.de/apis)
+- [Support](https://www.developers.immowelt.de/support)
+- [Status](https://www.developers.immowelt.de/support/status-page)
 
 ## API Evangelist rating
 
-**Kin Score 12.3** — emerging · rubric 0.24.0 · scored 2026-10-28
+**Kin Score 45.6** — developing · rubric 0.25.0 · scored 2026-10-28
 
 | Facet | Score |
 |---|---|
-| Discoverability | 62.5 |
-| Contract quality | 0.0 |
-| Contract governance | 0.0 |
-| Operational transparency | 10.5 |
-| Developer ergonomics | 21.4 |
+| Discoverability | 71.4 |
+| Contract quality | 64.2 |
+| Contract governance | 22.0 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 63.7 |
 | Access clarity | 0.0 |
 
-**Agent readiness 13.7** — agent-aware
+**Agent readiness 41.7** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
-| Spec Presence | — |
-| Agentic Access | — |
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
 | MCP Server | — |
 | Auth Clarity | served (partial credit) |
 | Idempotency | — |
-| Error Semantics | — |
-| OpenAPI Examples | — |
-| Rate Limit Signal | — |
+| Error Semantics | verified |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | — |
-| Agent Skills | — |
+| Agent Skills | derived (partial credit) |
 | Well Known Catalog | yes |
 | Consent Identity | — |
 | Agent Card | — |
@@ -131,8 +207,10 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | partial |
+| Operation Distinctiveness | distinct |
 
-**Regulatory alignment 17.6** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 32.4** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/immowelt/](https://apis.io/providers/immowelt/).
 
